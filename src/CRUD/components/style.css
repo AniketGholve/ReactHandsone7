@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+}
+
+.nav ul {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    height: 5vh;
+    align-items: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.d-grid {
+    display: grid;
+    gap: 10px;
+    place-content: center;
+    line-height: 2em;
+}
+
+.d-grid div label {
+    display: inline-block;
+    width: 100px;
+}
+
+.bg-sky {
+    background-color: skyblue;
+}
+
+table {
+    background-color: white;
+    border-top: 10px solid green;
+}
+
+th {
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    border-bottom: 3px solid green;
+    padding:5px 20px;
+}
