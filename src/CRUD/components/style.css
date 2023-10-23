@@ -9,7 +9,7 @@ body {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
-    height: 5vh;
+    height: 7vh;
     align-items: center;
 }
 
@@ -33,6 +33,8 @@ body {
     gap: 10px;
     place-content: center;
     line-height: 2em;
+    font-size: larger;
+    height: 80vh;
 }
 
 .d-grid div label {
@@ -57,4 +59,9 @@ button {
     border: none;
     border-bottom: 3px solid green;
     padding:5px 20px;
+    background-color: black;
+    color: beige;
+}
+tr td{
+    text-align: center;
 }

@@ -6,7 +6,6 @@ const Student = () => {
   const data = useSelector((state) => state.studentData.data)
   const Navi = useNavigate();
   const dispatch = useDispatch();
-  console.log(data)
   return (
     <>
       <div>
@@ -32,8 +31,8 @@ const Student = () => {
                   <td>{item.age}</td>
                   <td>{item.course}</td>
                   <td>{item.batch}</td>
-                  <td><Link to={`/editStudent/${key}`}>Edit</Link></td>
-                  <td><Link onClick={() => dispatch(deleteStudent(key))}>Delete</Link></td>
+                  <td><Link to={`/editStudent/${key}`}><i className="fa-solid fa-pen-to-square"></i></Link></td>
+                  <td><Link onClick={() => dispatch(deleteStudent(key))}><i className="fa-solid fa-trash"></i></Link></td>
                 </tr>
               ))}
             </tbody>

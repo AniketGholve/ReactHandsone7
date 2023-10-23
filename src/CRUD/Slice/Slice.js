@@ -35,9 +35,9 @@ const StudentSlice = createSlice({
             state = state.data.push(action.payload)
         },
         editStudent: (state, action) => {
+            console.log(action.payload)
             let id = action.payload.id;
-            delete action.payload.id;
-            state.data[id] = action.payload
+            state.data[id] = action.payload.formData
         },
         deleteStudent: (state, action) => {
             state.data = [...state.data.slice(0, action.payload), ...state.data.slice(action.payload + 1)]

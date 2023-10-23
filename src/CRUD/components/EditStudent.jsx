@@ -18,9 +18,7 @@ const EditStudent = () => {
     formData[e.target.name] = e.target.value
   }
   const submitData = () => {
-    formData.id = id;
-    console.log(formData)
-    dispatch(editStudent(formData))
+    dispatch(editStudent({id,formData}))
     Navi('/student');
   }
   return (
